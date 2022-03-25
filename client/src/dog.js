@@ -1,7 +1,9 @@
 import React from "react";
+import "./App.css";
 
 export default function Dog() {
     return(
-        <h1>Dog page</h1>
+    
+        <div>dog page </div>
     )
 }
