@@ -1,0 +1,51 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: .5fr 2fr 1.5fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+   margin: 2%;
+    }
+.one { grid-area: 1 / 1 / 2 / 2; }
+.two { grid-area: 1 / 2 / 2 / 3; }
+.three { grid-area: 2 / 1 / 3 / 2; }
+.four { grid-area: 2 / 2 / 3 / 3; }
+.five { grid-area: 3 / 1 / 4 / 2; }
+.six { grid-area: 3 / 2 / 4 / 3; }
+
+.one {
+    background-color: blue;
+
+}
+
+.two {
+    background-color: blue;
+}
+
+
+.three {
+    background-color: blue;
+}
+.buttons { 
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#four{
+    border: 2% solid black;
+    background-color: blue;
+}
+
+five { 
+    background-color: blue;
+}
+#ad{
+    width: 100%;
+    height: 100%;
+} 
+
+#six {
+    background-color: blue;
+}
+
