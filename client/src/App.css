@@ -1,52 +1,95 @@
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: .5fr 2fr 1.5fr;
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
-   margin: 2%;
-    }
-
-.one { grid-area: 1 / 1 / 2 / 2; }
-.two { grid-area: 1 / 2 / 2 / 3; }
-.three { grid-area: 2 / 1 / 3 / 2; }
-.four { grid-area: 2 / 2 / 3 / 3; }
-.five { grid-area: 3 / 1 / 4 / 2; }
-.six { grid-area: 3 / 2 / 4 / 3; } 
-
-
-#item-0 {
-    background-color: blue;
-
+body { 
+    margin: 1%;
 }
 
-#item-1 {
-    background-color: blue;
-}
-
-
-#item-2 {
-    background-color: blue;
-}
-buttons { 
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-}
-
-#item-3{
-    border: 2% solid black;
-    background-color: blue;
-}
-#item-4 { 
-    border: 2% solid black;
-}
-#ad{
+.angry-grid {
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
     width: 100%;
-    height: 100%;
-} 
-#item-5 {
-    background-color: blue;
+    height: calc(90vh - 40px);
+ }
+   
+ #item-0 {
+ 
+    background-color: #167AAC;
+    color: white;
+    grid-row-start: 1;
+    grid-column-start: 1;
+ 
+    grid-row-end: 2;
+    grid-column-end: 3;
+    
+ }
+ #item-1 {
+ 
+    background-color: #167AAC;
+    color: white;
+    grid-row-start: 1;
+    grid-column-start: 3;
+ 
+    grid-row-end: 2;
+    grid-column-end: 7;
+    
+ }
+ #item-2 {
+ 
+    background-color: #167AAC;
+    color: white;
+    grid-row-start: 2;
+    grid-column-start: 3;
+ 
+    grid-row-end: 6;
+    grid-column-end: 7;
+    
+ }
+ #item-3 {
+ 
+    background-color: #167AAC;
+    color: white;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 5;
+    grid-column-end: 3;
+    
+ }
+ button { 
+    display: flex;
+	color:#000000;
+	
+	padding:7px 25px;
+}
+ #item-4 {
+ 
+    background-color: #167AAC;
+    color: white;
+    grid-row-start: 5;
+    grid-column-start: 1;
+ 
+    grid-row-end: 7;
+    grid-column-end: 3;
+    
+ }
+ #item-5 {
+ 
+    background-color: #167AAC;
+    color: white;
+    grid-row-start: 6;
+    grid-column-start: 3;
+    grid-row-end: 7;
+    grid-column-end: 7;
+    
+ }
+
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 90vw;
+    height: 45vh;
+    background-color: white;
+    
 }
 
 
