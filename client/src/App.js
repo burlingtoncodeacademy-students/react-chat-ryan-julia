@@ -4,14 +4,15 @@ import Food from './food.js'
 import Dog from './dog.js'
 import Life from './life.js'
 import Home from './home.js'
-//  
+//import Register component
+import Register from './register.js'  
 //importing hooks from react
 import "./App.css";
 
 function App() {
   return (
     <>    
-      <center><h1>React Chat</h1></center>
+      <center><h1>Main Chat</h1></center>
         <div className = 'angry-grid'>
 {/* Available Rooms Start */}
 
@@ -22,32 +23,14 @@ function App() {
 
 {/* Main Chat Header */}
           <div id = 'item-1'>
-            <center><h2>Main Chat</h2></center>
+            <center><h2>Chat</h2></center>
           </div>
           
 {/* Chat Message */}
           <div id = 'item-2'>
             {/* <center><h3>Messages</h3></center> */}
-            <div id="entries">
-              <table>
-                  <tr>
-                    <th>Username</th>
-                    <th>Message</th>
-                  </tr>
-                  {/* programmatically renders every entry in the table */}
-                {/* creates a table with name, date and msg when they are entered into the database */}
-                {allEntries.map((entry) => {
-                  return (
-                    <tr key={entry._id}>
-                      <td>{entry.date}</td>,
-                      <td>{entry.UserName}</td>,
-                      <td>{entry.msg}</td>
-                    </tr> 
-                  )}
-                )}
-              </table>
-            </div>  
-          </div>
+            <Register/> 
+            </div>
 
 {/* Available Rooms Navigation */}
           <div id = 'item-3'> 
@@ -71,12 +54,12 @@ function App() {
             ad
           </div>
 
-{/* Username, messagem Send and Refresh */}
+{/* Username, message Send and Refresh */}
           <div id = 'item-5'>
             <center><p>
               {/* route on the server is create */}
               {/* our username / message sent etc */}
-              <form action="/create" method="POST">
+              <form action="http://localhost:5000/create" method="POST">
                       <input
                         type="text"
                         // req.body.userName on the server
@@ -98,6 +81,5 @@ function App() {
     </>
   );
 }
-
 
 export default App;

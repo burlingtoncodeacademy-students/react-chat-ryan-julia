@@ -1,7 +1,6 @@
 body { 
     margin: 1%;
-}
-
+ }
 .angry-grid {
     display: grid; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -9,8 +8,7 @@ body {
     gap: 2px;
     width: 100%;
     height: calc(90vh - 40px);
- }
-   
+ } 
  #item-0 {
  
     background-color: #167AAC;
@@ -19,8 +17,7 @@ body {
     grid-column-start: 1;
  
     grid-row-end: 2;
-    grid-column-end: 3;
-    
+    grid-column-end: 3;  
  }
  #item-1 {
  
@@ -28,10 +25,9 @@ body {
     color: white;
     grid-row-start: 1;
     grid-column-start: 3;
- 
+
     grid-row-end: 2;
-    grid-column-end: 7;
-    
+    grid-column-end: 7;   
  }
  #item-2 {
  
@@ -41,8 +37,7 @@ body {
     grid-column-start: 3;
  
     grid-row-end: 6;
-    grid-column-end: 7;
-    
+    grid-column-end: 7;   
  }
  #item-3 {
  
@@ -50,16 +45,17 @@ body {
     color: white;
     grid-row-start: 2;
     grid-column-start: 1;
+
     grid-row-end: 5;
-    grid-column-end: 3;
-    
+    grid-column-end: 3;  
  }
  button { 
     display: flex;
 	color:#000000;
 	
 	padding:7px 25px;
-}
+ }
+
  #item-4 {
  
     background-color: #167AAC;
@@ -68,8 +64,7 @@ body {
     grid-column-start: 1;
  
     grid-row-end: 7;
-    grid-column-end: 3;
-    
+    grid-column-end: 3;   
  }
  #item-5 {
  
@@ -77,19 +72,19 @@ body {
     color: white;
     grid-row-start: 6;
     grid-column-start: 3;
+
     grid-row-end: 7;
     grid-column-end: 7;
     
  }
-
 table{
     display: flex;
     justify-content: center;
     align-items: center;    
     width: 90vw;
     height: 45vh;
-    background-color: white;
-    
+    background-color: rgb(255, 255, 255); 
+    color: #000000;   
 }
 
 

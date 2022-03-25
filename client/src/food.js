@@ -3,6 +3,6 @@ import "./App.css";
 
 export default function Food() {
     return(
-        <h1>Food page</h1>
+        <h1>Food Food</h1>
     )
 }
