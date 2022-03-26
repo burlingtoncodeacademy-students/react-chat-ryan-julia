@@ -55,8 +55,8 @@ export default function Registry(props) {
                   return (
                   <tr key={entry._id}>
                     <tr>{entry.date}</tr>
-                    <tr>{entry.UserName}</tr>
-                    <tr>{entry.msg}</tr>
+                    <tr>User name: {entry.userName}</tr>
+                    <tr>Message: {entry.msg}</tr>
                     <td>
                       {" "}
                       {/* programmatically uses the Mongo _id of the entry to access the correct document in the database */}
