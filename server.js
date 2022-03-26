@@ -49,9 +49,9 @@ app.get("/allentries", async (req, res) => {
 app.post("/create", async (req, res) => {
   //assigning the creation of a new entry to a variable
 const newEntry = new Entry({
-  name: req.body.userName,
-  date: req.body.msg,
-  msg: req.body.date
+  date: req.body.date,
+  userName: req.body.userName,
+  msg: req.body.msg
 });
 
 //saving the new entry to the Model

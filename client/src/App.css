@@ -1,6 +1,7 @@
 body { 
     margin: 1%;
  }
+ /* Main grid style */
 .angry-grid {
     display: grid; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -9,16 +10,18 @@ body {
     width: 100%;
     height: calc(90vh - 40px);
  } 
+ /* Available Rooms Grid item*/
  #item-0 {
  
     background-color: #167AAC;
     color: white;
     grid-row-start: 1;
     grid-column-start: 1;
- 
     grid-row-end: 2;
     grid-column-end: 3;  
  }
+
+ /* Main Chat Header grid item */
  #item-1 {
  
     background-color: #167AAC;
@@ -29,6 +32,8 @@ body {
     grid-row-end: 2;
     grid-column-end: 7;   
  }
+
+ /* Chat Message grid item */
  #item-2 {
  
     background-color: #167AAC;
@@ -39,8 +44,21 @@ body {
     grid-row-end: 6;
     grid-column-end: 7;   
  }
+
+  /* table style within gird item-2*/
+table{
+   display: flex;
+   justify-content: center;
+   align-items: center;    
+   width: 100%;
+   height: 56vh;
+   background-color: rgb(255, 255, 255); 
+   color: #000000; 
+   border: 2px solid #167AAC;   
+}
+
+/* Available Rooms Navigation grid item*/
  #item-3 {
- 
     background-color: #167AAC;
     color: white;
     grid-row-start: 2;
@@ -49,43 +67,42 @@ body {
     grid-row-end: 5;
     grid-column-end: 3;  
  }
+
+ /*Send and refresh buttons*/
  button { 
     display: flex;
 	color:#000000;
-	
 	padding:7px 25px;
  }
 
+ /* Ad Picture grid item */
  #item-4 {
- 
     background-color: #167AAC;
     color: white;
     grid-row-start: 5;
     grid-column-start: 1;
- 
     grid-row-end: 7;
     grid-column-end: 3;   
  }
+
+ /* Ad Picture style to fit within the grid item-4 */
+ img{
+    width:100%;
+    height: 100%;
+ }
+
+/* Username, message Send and Refresh gird item*/
  #item-5 {
- 
     background-color: #167AAC;
     color: white;
     grid-row-start: 6;
     grid-column-start: 3;
-
     grid-row-end: 7;
     grid-column-end: 7;
     
  }
-table{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    width: 90vw;
-    height: 45vh;
-    background-color: rgb(255, 255, 255); 
-    color: #000000;   
-}
+
+
 
 
 
