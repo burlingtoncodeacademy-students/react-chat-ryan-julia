@@ -46,10 +46,6 @@ export default function Registry(props) {
             <table>
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Date</th>
-                  <th>Message</th>
-                  <th>Options</th>
                 </tr>
               </thead>
               <tbody>
@@ -58,15 +54,15 @@ export default function Registry(props) {
                 {allEntries.map((entry) => {
                   return (
                   <tr key={entry._id}>
-                    <td>{entry.name}</td>
-                    <td>{entry.date}</td>
-                    <td>{entry.msg}</td>
+                    <tr>{entry.date}</tr>
+                    <tr>{entry.UserName}</tr>
+                    <tr>{entry.msg}</tr>
                     <td>
                       {" "}
                       {/* programmatically uses the Mongo _id of the entry to access the correct document in the database */}
-                      <form action={`/delete/${entry._id}`} method="POST">
+                      {/* <form action={`/delete/${entry._id}`} method="POST">
                         <button>Scribble this out?</button>
-                      </form>
+                      </form> */}
                     </td>
                   </tr>
                 )})}

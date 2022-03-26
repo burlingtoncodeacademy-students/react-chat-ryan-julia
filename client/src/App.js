@@ -4,6 +4,7 @@ import Food from './food.js'
 import Dog from './dog.js'
 import Life from './life.js'
 import Home from './home.js'
+import ad from './pictures/ad.jpg'
 //import Register component
 import Register from './register.js'  
 //importing hooks from react
@@ -51,7 +52,7 @@ function App() {
 
 {/* Ad Picture */}
           <div id = 'item-4'>
-            ad
+            <img src={ad}/>
           </div>
 
 {/* Username, message Send and Refresh */}
