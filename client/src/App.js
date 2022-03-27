@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Routes, Route, NavLink } from 'react-router-dom';
+import { Routes, Route, NavLink, useParams} from 'react-router-dom';
 import Food from './food.js'
 import Dog from './dog.js'
 import Life from './life.js'
@@ -10,10 +10,12 @@ import Register from './register.js'
 //importing hooks from react
 import "./App.css";
 
+
+
 function App() {
+  let { id } = useParams();
   return (
     <>    
-      <center><h1>Main Chat</h1></center>
         <div className = 'angry-grid'>
 {/* Available Rooms Start */}
 
@@ -48,39 +50,46 @@ function App() {
                 <Route path='food' element={<Food />} />             
                 <Route path='life' element={<Life />} />             
               </Fragment>
-            </Routes>
-
+            </Routes>  
 {/* Ad Picture */}
           <div id = 'item-4'>
             <img src={ad}/>
           </div>
 
 {/* Username, message Send and Refresh */}
-          <div id = 'item-5'>
+        <div id = 'item-5'>
             <center><p>
               {/* route on the server is create */}
               {/* our username / message sent etc */}
               <form action="http://localhost:5000/create" method="POST">
+                  <input
+                    type="text"
+                    // req.body.userName on the server
+                    name="userName"
+                    placeholder="Username"
+                  />
                       <input
-                        type="text"
-                        // req.body.userName on the server
-                        name="userName"
-                        placeholder="Username"
-                      />
-                          <input
-                        type="text"
-                        // req.body.msg on the server
-                        name="msg"
-                        placeholder="User message to be sent?"
-                      />
-                      <input type="submit" value="SEND"/>
-                      <input type="button" value="REFRESH"/>
-                      </form>
+                    type="text"
+                    // req.body.msg on the server
+                    name="msg"
+                    placeholder="User message to be sent?"
+                  />
+                  {/*hidden input to get the current room URL */}
+                  <input type="hidden" 
+                  name="currentRoom"
+                  value= {id}
+                  />
+                  {/* Send button */}
+                  <input type="submit" value="SEND"/>
+                  {/* Refresh button */}
+                  <input type="button" value="REFRESH"/>
+              </form>
             </p></center>
           </div>
         </div>         
     </>
   );
 }
+  
 
 export default App;

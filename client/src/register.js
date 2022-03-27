@@ -30,12 +30,12 @@ export default function Registry(props) {
               </thead>
               <tbody>
                 {/* programmatically renders every entry in the table */}
-                {/* creates a table with name, date and msg when they are entered into the database */}
+                {/* creates a table with name and msg when they are entered into the database */}
                 {allEntries.map((entry) => {
                   return (
                   <tr key={entry._id}>
-                    <tr>{entry.date}</tr>
-                    <tr>User name: {entry.userName}</tr>
+                    {/* <tr>{entry.date}</tr> */}
+                    <tr>Username: {entry.userName}</tr>
                     <tr>Message: {entry.msg}</tr>
                     <td>
                       {" "}
