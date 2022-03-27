@@ -53,7 +53,7 @@ function App() {
             </Routes>  
 {/* Ad Picture */}
           <div id = 'item-4'>
-            <img src={ad}/>
+            <img src={ad} alt="galaxy"/>
           </div>
 
 {/* Username, message Send and Refresh */}
@@ -62,27 +62,33 @@ function App() {
               {/* route on the server is create */}
               {/* our username / message sent etc */}
               <form action="http://localhost:5000/create" method="POST">
+                  {/* //Username form field */}
+                  <label>Username:
                   <input
                     type="text"
                     // req.body.userName on the server
                     name="userName"
                     placeholder="Username"
                   />
+                  </label>
+                  {/* Message form field */}
+                  <label>Message:
                       <input
                     type="text"
                     // req.body.msg on the server
                     name="msg"
                     placeholder="User message to be sent?"
                   />
+                  </label>
                   {/*hidden input to get the current room URL */}
                   <input type="hidden" 
                   name="currentRoom"
                   value= {id}
                   />
                   {/* Send button */}
-                  <input type="submit" value="SEND"/>
+                  <input type="submit" className= "submitButton" value="SEND"/>
                   {/* Refresh button */}
-                  <input type="button" value="REFRESH"/>
+                  <input type="button" className= "submitButton" value="REFRESH"/>
               </form>
             </p></center>
           </div>

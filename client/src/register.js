@@ -1,6 +1,7 @@
 //----necessary imports
 //importing hooks from React
 import { useState, useEffect } from "react";
+
 import "./App.css";
 
 //---component function
