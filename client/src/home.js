@@ -3,6 +3,6 @@ import "./App.css";
 
 export default function Home() {
     return (
-        <div></div>
+        <center><h1>Home Page</h1></center>
     )
 }

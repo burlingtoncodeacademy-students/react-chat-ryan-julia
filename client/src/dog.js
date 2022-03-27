@@ -4,6 +4,6 @@ import "./App.css";
 export default function Dog() {
     return(
     
-        <h1>Dog Chat </h1>
+        <center><h1>Dog Chat </h1></center>
     )
 }

@@ -2,6 +2,13 @@ body {
     margin: 1%;
  }
  /* Main grid style */
+
+h1 {
+   display: flex;
+   position: fixed;
+   
+   top: 0;
+}
 .angry-grid {
     display: grid; 
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -9,6 +16,7 @@ body {
     gap: 2px;
     width: 100%;
     height: calc(90vh - 40px);
+    padding-top: 3%;
  } 
  /* Available Rooms Grid item*/
  #item-0 {
