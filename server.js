@@ -55,7 +55,7 @@ const newEntry = new Entry({
   msg: req.body.msg,
   date: new Date().toISOString()
 })
-console.log(currentRoom)
+// console.log(currentRoom)
 
 //saving the new entry to the Model
 await newEntry.save()
