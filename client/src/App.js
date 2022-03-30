@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import { Routes, Route, NavLink, useParams} from 'react-router-dom';
-import Food from './food.js'
-import Dog from './dog.js'
-import Life from './life.js'
-import Home from './home.js'
+import Food from './Components/food.js'
+import Dog from './Components/dog.js'
+import Life from './Components/life.js'
+import Home from './Components/home.js'
 import ad from './pictures/ad.jpg'
 //import Register component
-import Register from './register.js'  
+import Register from './Components/register.js'  
 //importing hooks from react
 import "./App.css";
 
@@ -45,10 +45,10 @@ function App() {
             <Routes>
               <Fragment> 
                 <Route path='/' element={<Home />} /> 
-                <Route path='home' element={<Home />} />             
-                <Route path='dog' element={<Dog />} />             
-                <Route path='food' element={<Food />} />             
-                <Route path='life' element={<Life />} />             
+                <Route path='/home' element={<Home />} />             
+                <Route path='/dog' element={<Dog />} />             
+                <Route path='/food' element={<Food />} />             
+                <Route path='/life' element={<Life />} />             
               </Fragment>
             </Routes>  
 {/* Ad Picture */}
@@ -58,7 +58,7 @@ function App() {
 
 {/* Username, message Send and Refresh */}
         <div id = 'item-5'>
-            <center><p>
+            <center>
               {/* route on the server is create */}
               {/* our username / message sent etc */}
               <form action="http://localhost:5000/create" method="POST">
@@ -90,7 +90,7 @@ function App() {
                   {/* Refresh button */}
                   <input type="button" className= "submitButton" value="REFRESH"/>
               </form>
-            </p></center>
+            </center>
           </div>
         </div>         
     </>
