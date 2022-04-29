@@ -1,6 +1,15 @@
+//importing mongoos
 const mongoose = require('mongoose')
 
-const Message = new mongoose.Schema({
-})
+//creating mongoos Schema
+const MessageSchema = new mongoose.Schema({
+    //key value pairs are the name of the key and what TYPE you want the value to be
+    date: Date,
+    userName: String,
+    msg: String,
+    room: String,
+});
 
-module.exports = Message
+
+//exporting just the MessageSchema
+module.exports = MessageSchema
